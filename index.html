@@ -1,51 +1,230 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./css/reset.css">
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-        <title>Agenda médica</title>
-    </head>
-    <body>
-        <header class="">
-            <img src="img/perfil-1.jpg" alt="foto de perfil">
-            <div class="">
-                <h1 class="">Olá, Sônia</h1>
-                <p classs="">Veja como está sua agenda para hoje</p>
-            </div>
-        </header>
+<html lang="pt-BR">
 
-        <Section>
-            <h2 class="">Hoje</h2>
-            <div class="">
-                <div class="">
-                <h3>Luciana dias</h3>
-                <p>Consulta remota</p>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Agenda médica</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="img/perfil-1.jpg" alt="foto de perfil" class="cabecalho__foto-perfil">
+        <div class="cabecalho__descricao">
+            <h1 class="cabecalho__titulo">Olá, Sônia</h1>
+            <p class="cabecalho__texto">Mais 4 consultas hoje</p>
+        </div>
+    </header>
+    <section class="agenda">
+        <h2 class="agenda__titulo">Hoje</h2>
+        <div class="card">
+            <div class="card__header">
+                <img src="img/perfil-2.jpg" alt="foto de perfil" class="card__foto-de-perfil">
+                <div class="card__descricao">
+                    <h3 class="card__titulo">Luciana Dias</h3>
+                    <p class="card__texto remoto">Consulta remota</p>
+                </div>
+                <a href="#" class="card__icone-chat"><img src="img/Chatcirculo1.svg" alt="ícone do chat"></a>
             </div>
-            <div>
+            <div class="card__body">
                 <h3>14:00 - 15:00 (1 hora)</h3>
-                <a>Ligar por vídeo</a>
-                <a>Ligar por aúdio</a>
+                <div class="card__botoes">
+                    <a href="#" class="card__botao video">Ligar por vídeo</a>
+                    <a href="#" class="card__botao audio">Ligar por áudio</a>
+                </div>
             </div>
+        </div>
+        <div class="card">
+            <div class="card__header">
+                <img src="img/perfil-3.jpg" alt="foto de perfil" class="card__foto-de-perfil">
+                <div class="card__descricao">
+                    <h3 class="card__titulo">Larissa Santana</h3>
+                    <p class="card__texto presencial">Consulta no local</p>
+                </div>
+                <a href="#" class="card__icone-chat"><img src="img/Chatcirculo1.svg" alt="ícone do chat"></a>
             </div>
-        </Section>
-    </body>
+            <div class="card__body">
+                <h3>16:00 - 17:00 - (1 hora)</h3>
+                <div class="card__botoes">
+                    <a href="#" class="card__botao local">Ver endereço</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__header">
+                <img src="img/perfil-4.jpg" alt="foto de perfil" class="card__foto-de-perfil">
+                <div class="card__descricao">
+                    <h3 class="card__titulo">Marcos Correia</h3>
+                    <p class="card__texto remoto">Consulta remota</p>
+                </div>
+                <a href="#" class="card__icone-chat"><img src="img/Chatcirculo1.svg" alt="ícone do chat"></a>
+            </div>
+            <div class="card__body">
+                <h3>17:20 - 18:00 (40 minutos)</h3>
+                <div class="card__botoes">
+                    <a href="#" class="card__botao video">Ligar por vídeo</a>
+                    <a href="#" class="card__botao audio">Ligar por áudio</a>
+                </div>
+            </div>
+        </div>
+        <h2 class="agenda__titulo">Amanhã</h2>
+        <div class="card">
+            <div class="card__header">
+                <img src="img/perfil-5.jpg" alt="foto de perfil" class="card__foto-de-perfil">
+                <div class="card__descricao">
+                    <h3 class="card__titulo">Clara Lemos</h3>
+                    <p class="card__texto presencial">Consulta no local</p>
+                </div>
+                <a href="#" class="card__icone-chat"><img src="img/Chatcirculo1.svg" alt="ícone do chat"></a>
+            </div>
+            <div class="card__body">
+                <h3>16:00 - 17:00 - (1 hora)</h3>
+                <div class="card__botoes">
+                    <a href="#" class="card__botao local">Ver endereço</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__header">
+                <img src="img/perfil-2.jpg" alt="foto de perfil" class="card__foto-de-perfil">
+                <div class="card__descricao">
+                    <h3 class="card__titulo">Luciana Dias</h3>
+                    <p class="card__texto remoto">Consulta remota</p>
+                </div>
+                <a href="#" class="card__icone-chat"><img src="img/Chatcirculo1.svg" alt="ícone do chat"></a>
+            </div>
+            <div class="card__body">
+                <h3>14:00 - 15:00 (1 hora)</h3>
+                <div class="card__botoes">
+                    <a href="#" class="card__botao video">Ligar por vídeo</a>
+                    <a href="#" class="card__botao audio">Ligar por áudio</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__header">
+                <img src="img/perfil-4.jpg" alt="foto de perfil" class="card__foto-de-perfil">
+                <div class="card__descricao">
+                    <h3 class="card__titulo">Marcos Correia</h3>
+                    <p class="card__texto remoto">Consulta remota</p>
+                </div>
+                <a href="#" class="card__icone-chat"><img src="img/Chatcirculo1.svg" alt="ícone do chat"></a>
+            </div>
+            <div class="card__body">
+                <h3>17:20 - 18:00 (40 minutos)</h3>
+                <div class="card__botoes">
+                    <a href="#" class="card__botao video">Ligar por vídeo</a>
+                    <a href="#" class="card__botao audio">Ligar por áudio</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__header">
+                <img src="img/perfil-3.jpg" alt="foto de perfil" class="card__foto-de-perfil">
+                <div class="card__descricao">
+                    <h3 class="card__titulo">Larissa Santana</h3>
+                    <p class="card__texto presencial">Consulta no local</p>
+                </div>
+                <a href="#" class="card__icone-chat"><img src="img/Chatcirculo1.svg" alt="ícone do chat"></a>
+            </div>
+            <div class="card__body">
+                <h3>16:00 - 17:00 - (1 hora)</h3>
+                <div class="card__botoes">
+                    <a href="#" class="card__botao local">Ver endereço</a>
+                </div>
+            </div>
+        </div>
+        <h2 class="agenda__titulo">Quarta-feira</h2>
+        <div class="card">
+            <div class="card__header">
+                <img src="img/perfil-5.jpg" alt="foto de perfil" class="card__foto-de-perfil">
+                <div class="card__descricao">
+                    <h3 class="card__titulo">Clara Lemos</h3>
+                    <p class="card__texto presencial">Consulta no local</p>
+                </div>
+                <a href="#" class="card__icone-chat"><img src="img/Chatcirculo1.svg" alt="ícone do chat"></a>
+            </div>
+            <div class="card__body">
+                <h3>16:00 - 17:00 - (1 hora)</h3>
+                <div class="card__botoes">
+                    <a href="#" class="card__botao local">Ver endereço</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <nav class="rodape">
+        <div class="cadastro__botao">
+            <a href="#" class="cadastro__link">
+                <img src="img/maisicone.svg" alt="icone de mais" class="cadastro__icone">
+            </a>
+        </div>
+        <div class="container__formulario rodape__link">
+            <input type="checkbox" id="cadastro" class="container__botao">
+            <label for="cadastro" class="container__label rodape__icone">Cadastro
+                <h3 class="cadastro__formulario-icone"></h3>
+            </label>
+            <h3 class="rodape__titulo">Consultas</h3>
+            <form class="formulario" data-formulario>
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="nome">Nome</label>
+                    <input name="nome" id="nome" class="campo__escrita" type="text" minlength="3" required
+                        placeholder="Nome" />
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="tipo-consulta">Tipo de consulta</label>
+                    <select name="tipo-consulta" id="tipo-consulta" autocomplete="off" class="campo__escrita">
+                        <option value="remota" selected="selected">Remota</option>
+                        <option value="local">Local</option>
+                    </select>
+                </fieldset>
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="data-consulta">Data da consulta</label>
+                    <input name="data-consulta" id="data-consulta" class="campo__escrita" type="date" required />
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="hora-consulta">Hora da consulta</label>
+                    <input name="hora-consulta" id="hora-consulta" class="campo__escrita campo__escrita--menor"
+                        type="time" required />
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+                <fieldset class="formulario__termos">
+                    <input name="termos" class="termos__input" type="checkbox" required>
+                    <p class="termos__texto">Li e estou ciente quanto às condições de tratamento dos meus dados conforme
+                        descrito na Política de Privacidade da plataforma.</p>
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+                <div>
+                    <input value="Enviar" class="formulario__botao" id="enviar" data-botao-enviar type="submit">
+                    <span class="mensagem-erro"></span>
+                </div>
+            </form>
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
+        <a href="#" class="rodape__link consultas">
+            <img src="img/Calendarioicone.svg" alt="icone clientes" class="rodape__icone">
+            <h3 class="rodape__titulo">Consultas</h3>
+        </a>
+        <a href="#" class="rodape__link">
+            <img src="img/clientes icone.svg" alt="icone clientes" class="rodape__icone">
+            <h3 class="rodape__titulo">Clientes</h3>
+        </a>
+        <a href="#" class="rodape__link">
+            <img src="img/relatorios icone.svg" alt="icone relatorios" class="rodape__icone">
+            <h3 class="rodape__titulo">Relatórios</h3>
+        </a>
+        <a href="#" class="rodape__link">
+            <img src="img/menu icone.svg" alt="icone de menu" class="rodape__icone">
+            <h3 class="rodape__titulo">Menu</h3>
+        </a>
+    </nav>
+</body>
 
 </html>
