@@ -1,4 +1,4 @@
-.rodape{
+.rodape {
     display: flex;
     justify-content: space-evenly;
     border-radius: 1em 1em 0 0;
@@ -8,9 +8,8 @@
     background: var(--branco);
     width: 100%;
     padding: 0.5em 0;
-
-
 }
+
 .rodape__link {
     display: flex;
     flex-direction: column;
@@ -27,7 +26,6 @@
 .rodape__titulo {
     font-size: 12px;
     color: var(--cinza-escuro);
-
 }
 
 .consultas {
@@ -40,11 +38,13 @@
     border-radius: 50%;
     background: var(--azul);
     position: absolute;
-    bottom: 150%;
-    left: 75%;
+    bottom: 2em; /* Ajuste a posição vertical */
+    left: 50%; /* Ajuste a posição horizontal */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 10; /* Garante que o botão fique acima dos outros elementos */
 }
 
 @media screen and (min-width: 768px) {
@@ -60,8 +60,8 @@
     .cadastro__botao {
         width: 70px;
         height: 70px;
-        left: 89%;
-
+        left: 50%; /* Ajuste a posição horizontal */
+        transform: translateX(-50%); /* Centraliza horizontalmente */
     }
 }
 
@@ -80,10 +80,11 @@
         flex-direction: row;
     }
 
-    rodape__titulo:hover {
+    .rodape__titulo:hover {
         background: var(--azul);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        background-clip: text;
         font-weight: 700;
     }
 
